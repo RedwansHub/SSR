@@ -83,7 +83,7 @@ const Markup= () => {
 					<Route path='/browse-candidates' exact component={Browsecandidates} />
 					
 					
-					<Route path='/aAB' exact component={Aboutus} />
+					<Route path='/about-us' exact component={Aboutus} />
 					<Route path='/job-detail' exact component={Jobdetail} />
 					<Route path='/companies' exact component={Companies} />
 					{/* <Route path='/free-job-alerts' exact component={Freejobalerts} /> */}

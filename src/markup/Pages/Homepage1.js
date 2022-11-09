@@ -28,11 +28,11 @@ function Homepage(){
 						<div className='mb-5 mt-20'>
 							<hr className='solid'/>
 						</div>
-						<div className="section-head d-flex head-counter clearfix">
+						{/* <div className="section-head d-flex head-counter clearfix">
 							<div className="mr-auto">
 								<h2 className="m-b5">About Spectre Search</h2>
 							</div>
-						</div>
+						</div> */}
 						<div className='section-head d-flex'>
 							<div className='row'>
 								<div className='col-xl-6'>
