@@ -162,13 +162,13 @@ class Header extends Component{
 												<li><Link to={"#"}  className="dez-page"><span onClick={this.handleShow}>Quick Upload CV</span></Link></li>
 											</ul>
 										</li>
-										{/* <li><Link to={"/company-post-jobs"} >For Employers</Link>
-											<ul className="sub-menu">
+										<li><Link to={"/company-profile"} >For Employers</Link>
+											{/* <ul className="sub-menu">
 												<li><Link to={"/company-post-jobs"} className="dez-page">Post A Jobs </Link></li>
 												<li><Link to={"/company-manage-job"} className="dez-page">Manage jobs </Link></li>
 												<li><Link to={"/browse-candidates"}  className="dez-page">Browse Candidates</Link></li>
-											</ul>
-										</li> */}
+											</ul> */}
+										</li>
 										
 										<li><Link to={"/contact"}>Contact Us</Link></li>
 										{/* <li><Link to={"/login"} className="site-button">Login / Register</Link></li> */}

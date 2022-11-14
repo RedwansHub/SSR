@@ -13,10 +13,10 @@ import Jobsalert from './Pages/Jobsalert';
 import Jobsavedjobs from './Pages/Jobsavedjobs';
 import Jobcvmanager from './Pages/Jobcvmanager';
 import Changepasswordpage from './Pages/Changepasswordpage';
-
-// import Componypostjobs from './Pages/Componypostjobs';
-// import Companymanage from './Pages/Companymanage';
-// import Browsecandidates from './Pages/Browsecandidates';
+import Companyprofile from './Pages/Companyprofile';
+import Componypostjobs from './Pages/Componypostjobs';
+import Companymanage from './Pages/Companymanage';
+import Browsecandidates from './Pages/Browsecandidates';
 
 import Browsejobfilterlist from './Pages/Browsejobfilterlist';
 import Browsejobfiltergrid from './Pages/Browsejobfiltergrid';
@@ -54,10 +54,11 @@ const Markup2 = () => {
                 <Route path='/jobs-change-password' exact component={Changepasswordpage} />
 
             {/* ---- EMPLOYERS ---  */}
-                {/* <Route path='/company-post-jobs' exact component={Componypostjobs} />
+                <Route path='/company-profile' exact component={Companyprofile} />
+                <Route path='/company-post-jobs' exact component={Componypostjobs} />
                 <Route path='/company-manage-job' exact component={Companymanage} />
-                <Route path='/browse-candidates' exact component={Browsecandidates} /> */}
-                <Route path='/company-post-jobs' exact component={Error404} />
+                <Route path='/browse-candidates' exact component={Browsecandidates} />
+                {/* <Route path='/company-post-jobs' exact component={Error404} /> */}
                 {/* <Route path='/company-manage-job' exact component={Error404} />
                 <Route path='/browse-candidates' exact component={Error404} />  */}
 

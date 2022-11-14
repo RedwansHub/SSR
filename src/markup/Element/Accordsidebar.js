@@ -28,7 +28,7 @@ function Accordsidebar(){
 								<div className="acod-content">
 								<label style={{float: 'right'}} >£{value}K</label>
 									<h6 className="">Minimum Salary</h6>
-									<RangeSlider
+									<RangeSlider 
 										onChange={changeEvent => setValue(changeEvent.target.value)}
 										style={{width:'90%'}}
 									/>

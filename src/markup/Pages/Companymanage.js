@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import Header2 from './../Layout/Header2';
+import Header from './../Layout/Header';
 import Footer from './../Layout/Footer';
 import {Modal} from 'react-bootstrap';
 
@@ -8,7 +8,7 @@ function Companymanage(){
 	const [company, setCompany] = useState(false);
 		return(
 			<>
-				<Header2 />
+				<Header />
 				<div className="page-content bg-white">
 					<div className="content-block">
 						<div className="section-full bg-white p-t50 p-b20">
@@ -32,19 +32,19 @@ function Companymanage(){
 													</div>
 												</div>
 												<ul>
-													<li><Link to={"/ompany-profile"}>
+													<li><Link to={"/company-profile"}>
 														<i className="fa fa-user-o" aria-hidden="true"></i> 
 														<span>Company Profile</span></Link></li>
 													<li><Link to={"/company-post-jobs"}>
 														<i className="fa fa-file-text-o" aria-hidden="true"></i> 
 														<span>Post A Job</span></Link></li>
-													<li><Link to={"/company-transactions"}>
+													{/* <li><Link to={"/company-transactions"}>
 														<i className="fa fa-random" aria-hidden="true"></i>
-														<span>Transactions</span></Link></li>
+														<span>Transactions</span></Link></li> */}
 													<li><Link to={"/company-manage-job"} className="active">
 														<i className="fa fa-briefcase" aria-hidden="true"></i> 
 														<span>Manage jobs</span></Link></li>
-													<li><Link to={"/company-resume"}>
+													{/* <li><Link to={"/company-resume"}>
 														<i className="fa fa-id-card-o" aria-hidden="true"></i>
 														<span>Resume</span></Link></li>
 													<li><Link to={"/jobs-change-password"}>
@@ -52,7 +52,7 @@ function Companymanage(){
 														<span>Change Password</span></Link></li>
 													<li><Link to={"./"}>
 														<i className="fa fa-sign-out" aria-hidden="true"></i> 
-														<span>Log Out</span></Link></li>
+														<span>Log Out</span></Link></li> */}
 												</ul>
 											</div>
 										</div>
@@ -97,7 +97,7 @@ function Companymanage(){
 															</div>
 														</td>
 														<td className="job-name">
-															<Link to ={"#"}>Social Media Expert</Link>
+															<Link to ={"#"}>Full Stack Developer</Link>
 															<ul className="job-post-info">
 																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
 																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
@@ -120,38 +120,15 @@ function Companymanage(){
 															</div>
 														</td>
 														<td className="job-name">
-															<Link to ={"#"}>Web Designer</Link>
+															<Link to ={"#"}>UI/UX Designer</Link>
 															<ul className="job-post-info">
 																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
 																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																<li><i className="fa fa-filter"></i> Web Designer</li>
+																<li><i className="fa fa-filter"></i> Designer</li>
 															</ul>
 														</td>
 														<td className="application text-primary">(8) Applications</td>
 														<td className="expired text-red">Expired</td>
-														<td className="job-links">
-															<Link to ={"#"} onClick={()=>setCompany(true)}>
-															<i className="fa fa-eye"></i></Link>
-															<Link to ={"#"}><i className="ti-trash"></i></Link>
-														</td>
-													</tr>
-													<tr>
-														<td className="feature">
-															<div className="custom-control custom-checkbox">
-																<input type="checkbox" className="custom-control-input" id="check3" name="example1" />
-																<label className="custom-control-label" htmlFor="check3"></label>
-															</div>
-														</td>
-														<td className="job-name">
-															<Link to ={"#"}>Finance Accountant</Link>
-															<ul className="job-post-info">
-																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
-																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																<li><i className="fa fa-filter"></i> Web Designer</li>
-															</ul>
-														</td>
-														<td className="application text-primary">(9) Applications</td>
-														<td className="expired pending">Pending </td>
 														<td className="job-links">
 															<Link to ={"#"} onClick={()=>setCompany(true)}>
 															<i className="fa fa-eye"></i></Link>
@@ -166,7 +143,7 @@ function Companymanage(){
 															</div>
 														</td>
 														<td className="job-name">
-															<Link to ={"#"}>Social Media Expert</Link>
+															<Link to ={"#"}>Frontend Developer</Link>
 															<ul className="job-post-info">
 																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
 																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
@@ -212,11 +189,11 @@ function Companymanage(){
 															</div>
 														</td>
 														<td className="job-name">
-															<Link to ={"#"}>Finance Accountant</Link>
+															<Link to ={"#"}>Backend Developer</Link>
 															<ul className="job-post-info">
 																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
 																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																<li><i className="fa fa-filter"></i> Web Designer</li>
+																<li><i className="fa fa-filter"></i>Developer</li>
 															</ul>
 														</td>
 														<td className="application text-primary">(3) Applications</td>
@@ -235,7 +212,7 @@ function Companymanage(){
 															</div>
 														</td>
 														<td className="job-name">
-															<Link to ={"#"}>Social Media Expert</Link>
+															<Link to ={"#"}>Data Analyst</Link>
 															<ul className="job-post-info">
 																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
 																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
@@ -273,52 +250,7 @@ function Companymanage(){
 															<Link to ={"#"}><i className="ti-trash"></i></Link>
 														</td>
 													</tr>
-													<tr>
-														<td className="feature">
-															<div className="custom-control custom-checkbox">
-																<input type="checkbox" className="custom-control-input" id="check9" name="example1" />
-																<label className="custom-control-label" htmlFor="check9"></label>
-															</div>
-														</td>
-														<td className="job-name">
-															<Link to ={"#"}>Finance Accountant</Link>
-															<ul className="job-post-info">
-																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
-																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																<li><i className="fa fa-filter"></i> Web Designer</li>
-															</ul>
-														</td>
-														<td className="application text-primary">(1) Applications</td>
-														<td className="expired text-red">Expired</td>
-														<td className="job-links">
-															<Link to ={"#"} onClick={()=>setCompany(true)}>
-															<i className="fa fa-eye"></i></Link>
-															<Link to ={"#"}><i className="ti-trash"></i></Link>
-														</td>
-													</tr>
-													<tr>
-														<td className="feature">
-															<div className="custom-control custom-checkbox">
-																<input type="checkbox" className="custom-control-input" id="check10" name="example1" />
-																<label className="custom-control-label" htmlFor="check10"></label>
-															</div>
-														</td>
-														<td className="job-name">
-															<Link to ={"#"}>Web Designer</Link>
-															<ul className="job-post-info">
-																<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
-																<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																<li><i className="fa fa-filter"></i> Web Designer</li>
-															</ul>
-														</td>
-														<td className="application text-primary">(1) Applications</td>
-														<td className="expired success">Active </td>
-														<td className="job-links">
-															<Link to ={"#"}  onClick={()=>setCompany(true)}>
-															<i className="fa fa-eye"></i></Link>
-															<Link to ={"#"}><i className="ti-trash"></i></Link>
-														</td>
-													</tr>
+													
 												</tbody>
 											</table>
 											<div className="pagination-bx m-t30 float-right">

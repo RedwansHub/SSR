@@ -28,27 +28,27 @@ function Homepage(){
 						<div className='mb-5 mt-20'>
 							<hr className='solid'/>
 						</div>
-						{/* <div className="section-head d-flex head-counter clearfix">
+						<div className="section-head d-flex head-counter clearfix">
 							<div className="mr-auto">
 								<h2 className="m-b5">About Spectre Search</h2>
 							</div>
-						</div> */}
+						</div>
 						<div className='section-head d-flex'>
 							<div className='row'>
 								<div className='col-xl-6'>
-									<p>Morgan Hunt is a multi-award-winning UK recruitment agency with offices in London, 
-										Birmingham, Manchester, Glasgow and Milton Keynes. We provide specialist recruitment 
-										services to organisations across the public, private and not for profit sectors.
-										<br /> <br />
-										Founded in 1994, we’ve become renowned for connecting talented candidates and brilliant 
-										organisations within the charity, education, finance, government, housing, professional 
-										services, property & construction, social care and technology sectors.
+									<p>Spectre Search Recruitment (“SSR”) is a unique new headhunting and recruitment business – 
+										led by three IT Recruitment directors with over 25 years of experience between them, 
+										our key philosophy is our focus is understanding our client and candidate pool in order to 
+										match the best quality candidate with the right client. <br />All three directors, each with a 
+										very different style of recruitment which has proven to be a success in their past experiences, 
+										are working in synergy to combine their talents in order to to set up this unique agency.
+										 
 									</p>
-									<Link to='/about-us' className='site-button p-t10 p-b10'>More About Us</Link>
+									<Link to='/about-us' className='site-button  p-b10'>More About Us</Link>
 									
 								</div>
 								<div className='col-xl-6 col-md-6 '>
-									<img src={aboutImage} alt="aboutUs" className='p-t10 m-auto' style={{width: '100%'}}/>
+									<img src={aboutImage} alt="aboutUs" className='p-t10  m-auto' style={{width: '100%'}}/>
 								</div>
 
 							</div>
